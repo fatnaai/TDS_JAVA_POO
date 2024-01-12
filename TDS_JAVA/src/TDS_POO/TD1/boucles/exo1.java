@@ -1,0 +1,22 @@
+package TDS_POO.TD1.boucles;
+
+import java.util.Scanner;
+
+public class exo1 {
+    public static void main(String[] args) {
+        int n , s=0 , f=1;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("The N:");
+        n = scanner.nextInt();
+        for (int i = 1; i <=n ; i++) {
+            f *= i;
+            if (i%2!=0){
+                s += i;
+            }
+        }
+
+        System.out.println("f= "+ f + " s= "+s);
+
+
+    }
+}
